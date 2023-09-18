@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/17/2023 11:00:55 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="BONILLA"
+  DTS:CreatorName="BONILLA\edalb"
+  DTS:Description="DTS Wizard-generated package"
+  DTS:DTSID="{931FF560-9502-4103-B63F-1681B4FE0C64}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LocaleID="17418"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="Package1"
+  DTS:VersionGUID="{AC8F375B-3ED6-4F03-8E50-EAECB85EDAE7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B1072232-C3E8-4733-90B8-08D14A54677C}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=Fiorella_San_salvador;Provider=MSOLEDBSQL.1;Persist Security Info=True;Initial File Name=&quot;&quot;;Server SPN=&quot;&quot;;Authentication=&quot;&quot;;Access Token=&quot;&quot;;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjiWYtQKeAk6Jc3fkCGCqmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAqMndaJf81vy5j4NQQXZkEVno2zFiQ4PVDPb87iGL9sAAAAAAOgAAAAAIAACAAAADQ9yxQShs6r/k70WRZF7/37wr5WXCpHLBeIxN1FH4F8xAAAACTaQRIYMVxljxE35BviWrhQAAAAHikaFPM50OjJlQOPLcpAmyQBf3Ui/QzezAbbw1ydx9tkCWlYfJ4gkQDXcz43YjHDhmkyiIYQ9CQ+NV1VCPTv0Q</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BDF260BC-D7DD-4C0D-A3F5-060EB82D6A0C}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\edalb\OneDrive\Documentos\UDB\DMD\desafio\ResursosDesafio1\Fiorella\SanMiguel_j20191007.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{0C4EF05B-6EDB-4937-BA82-BA73D1875A8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{78C14A73-3D4A-4175-A5BB-9EA29DC5E3AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{D40813AB-D19C-4D15-A1C1-A4AB49C075EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{BF44B25A-0DA7-4849-8A63-6F3E2B458E35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{7ADE7F5A-F585-43AB-AE91-80DC3F2F2D52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{D089DD69-6E81-43DC-B774-48CDF0DC70B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{6D15975B-312F-470D-A581-948766CD55BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{60199951-F375-4C67-B048-182F4CEC2163}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{1BF52C4D-999A-432E-AD3A-A78B22BDAE49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquÃ­dias"
+              DTS:DTSID="{3110488E-5666-44C6-80AE-705A72F04E80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CarmesÃ­"
+              DTS:DTSID="{A3E02630-77AA-448F-B6E6-2D4C8DC15559}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{F2B52981-BB91-4F6C-96A6-F464E61A76C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{864F41E6-69C0-40E9-B6FD-A3BDED4732CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{D6E87A4A-3C26-414B-A39E-2630E50A0A10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ListÃ³n"
+              DTS:DTSID="{95932756-7259-482C-A30A-94F187D2B9A6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea de SQL Preparación 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{E1D066E6-74E3-4FB3-A055-9B1EBA5E8286}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea de SQL Preparación 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B1072232-C3E8-4733-90B8-08D14A54677C}"
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[SanMiguel_j20191007] (&#xA;[id] varchar(50),&#xA;[Rosas] varchar(50),&#xA;[Claveles] varchar(50),&#xA;[Macetas] varchar(50),&#xA;[Tierra] varchar(50),&#xA;[Girasoles] varchar(50),&#xA;[Hortensia] varchar(50),&#xA;[Globos] varchar(50),&#xA;[Tarjetas] varchar(50),&#xA;[fOrquÃ­dias] varchar(50),&#xA;[CarmesÃ­] varchar(50),&#xA;[Lirios] varchar(50),&#xA;[Aurora] varchar(50),&#xA;[Tulipanes] varchar(50),&#xA;[ListÃ³n] varchar(50)&#xA;)&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{D11C1C19-3149-4093-911B-76746ABA5270}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destino - SanMiguel_j20191007"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SanMiguel_j20191007]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Rosas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Rosas]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Rosas]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Claveles]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Claveles]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Claveles]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Macetas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Macetas]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Macetas]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Tierra]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tierra]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tierra]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Girasoles]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Girasoles]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Girasoles]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Hortensia]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Hortensia]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Hortensia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Globos]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Globos]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Globos]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Tarjetas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tarjetas]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tarjetas]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[fOrquÃ­dias]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fOrquÃ­dias"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[fOrquÃ­dias]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[CarmesÃ­]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CarmesÃ­"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[CarmesÃ­]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[CarmesÃ­]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Lirios]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Lirios]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Lirios]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Aurora]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Aurora]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Aurora]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[Tulipanes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tulipanes]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tulipanes]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].Columns[ListÃ³n]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ListÃ³n"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[ListÃ³n]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[ListÃ³n]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Rosas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Claveles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Macetas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tierra]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Girasoles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Hortensia]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Globos]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tarjetas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[fOrquÃ­dias]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fOrquÃ­dias" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[CarmesÃ­]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CarmesÃ­" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Lirios]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Aurora]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[Tulipanes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input].ExternalColumns[ListÃ³n]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ListÃ³n" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="17418"
+              name="Origen - SanMiguel_j20191007_csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Rosas]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Rosas]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Rosas]"
+                      name="Rosas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Claveles]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Claveles]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Claveles]"
+                      name="Claveles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Macetas]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Macetas]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Macetas]"
+                      name="Macetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tierra]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tierra]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tierra]"
+                      name="Tierra"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Girasoles]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Girasoles]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Girasoles]"
+                      name="Girasoles"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Hortensia]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Hortensia]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Hortensia]"
+                      name="Hortensia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Globos]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Globos]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Globos]"
+                      name="Globos"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tarjetas]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tarjetas]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tarjetas]"
+                      name="Tarjetas"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[fOrquÃ­dias]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]"
+                      name="fOrquÃ­dias"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[CarmesÃ­]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[CarmesÃ­]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[CarmesÃ­]"
+                      name="CarmesÃ­"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Lirios]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Lirios]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Lirios]"
+                      name="Lirios"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Aurora]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Aurora]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Aurora]"
+                      name="Aurora"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tulipanes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tulipanes]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[Tulipanes]"
+                      name="Tulipanes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[ListÃ³n]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[ListÃ³n]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].Columns[ListÃ³n]"
+                      name="ListÃ³n"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Rosas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Claveles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Macetas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tierra]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Girasoles]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Hortensia]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Globos]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tarjetas]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[fOrquÃ­dias]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fOrquÃ­dias" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[CarmesÃ­]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CarmesÃ­" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Lirios]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Aurora]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[Tulipanes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output].ExternalColumns[ListÃ³n]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ListÃ³n" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos 1.Paths[Flat File Source Output]"
+              endId="Package\Tarea Flujo de datos 1\Destino - SanMiguel_j20191007.Inputs[Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Tarea Flujo de datos 1\Origen - SanMiguel_j20191007_csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{7D9A3997-2DFA-4AD2-A954-48972D59C6D4\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{7D9A3997-2DFA-4AD2-A954-48972D59C6D4}"
+      DTS:From="Package\Tarea de SQL Preparación 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{7D9A3997-2DFA-4AD2-A954-48972D59C6D4}"
+      DTS:To="Package\Tarea Flujo de datos 1" />
+  </DTS:PrecedenceConstraints>
+</DTS:Executable>
