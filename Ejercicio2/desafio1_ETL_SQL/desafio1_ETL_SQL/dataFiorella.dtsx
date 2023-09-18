@@ -1,0 +1,924 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/17/2023 10:29:38 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="BONILLA"
+  DTS:CreatorName="BONILLA\edalb"
+  DTS:DTSID="{98F02472-E84C-4569-9C24-176ADB6857F0}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LocaleID="17418"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{CC6D2E5A-D4B2-4E08-A78B-6F9E9C8D6CD4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E8156B7D-1924-4DC2-91D0-1F8F8504BE97}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\edalb\OneDrive\Documentos\UDB\DMD\desafio\ResursosDesafio1\Fiorella\fiorella_data.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{F642E794-D354-491D-9804-DE779AE6A060}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{40426EAB-FC3D-4E87-91BC-DC6767821F6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{4256943A-7A8F-4019-B971-F569C475ECD2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{49731BC5-D399-4E14-B5A2-39C183A75324}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{79A2D566-7C5C-424E-AB34-A1FCCD6968AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{4E9EDA35-B9F3-4DE9-B2C5-C6C417C22128}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{2831BD03-E4BE-4DC2-B926-624DA13FB28B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{DA6E11D2-555D-49CF-859C-7449374EB5A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{E670C4D5-8102-4E98-AAAF-D9D891914AD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fOrquÃ­dias"
+              DTS:DTSID="{FCB07469-732A-4C98-9C9D-8B04181A4CC3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CarmesÃ­"
+              DTS:DTSID="{FB61CF49-AD4A-4A09-8F34-8624530EDE63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{752DD61E-BCBB-4C00-9487-3141894D75C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{D699E6DB-4962-4C67-BE3A-AB665113193C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{5D2425B6-2349-43CF-B6A3-2C2BC21FBF03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ListÃ³n"
+              DTS:DTSID="{66DCE66D-DFCE-4E8E-911C-7344A9E777A2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{45FBD96D-7EF1-4396-9B28-C2FB3DB52977}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\edalb\OneDrive\Documentos\UDB\DMD\desafio\ResursosDesafio1\Fiorella\fiorella_data.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{62509FD0-51BB-42F3-861C-F34ABB4E340B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{4FC507D8-948B-40F4-A8B3-F4DCCA2B7DAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{F7B38CDA-2214-4DAF-AA4D-900A8C6DAD7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{E9E96CF2-3793-4AF3-A050-FDC5356C6801}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{E4E37D08-48B1-452F-9C42-E7BF1D09721C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{78EAF698-E4D1-4DD3-B0DF-D804184D7DC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{1FA8EE42-332A-4125-804C-30E37CE1068F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{CB158A61-1907-42EF-876A-9EDB495793AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{46136DE5-2321-45FA-9A17-1285B9BB6023}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{A0A24074-FB5D-4F9B-9145-20B6289EF1E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{A077087D-85AF-4D9C-BD32-189B24E19EA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{07574499-EB68-4937-B35E-D532787E0DB7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Fiorella_San_salvador.sa]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{B44D4D01-9906-4E21-A582-2DEA1083D837}"
+      DTS:ObjectName="localhost.Fiorella_San_salvador.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=Fiorella_San_salvador;Application Name=SSIS-Package2-{B44D4D01-9906-4E21-A582-2DEA1083D837}localhost.Fiorella_San_salvador.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjiWYtQKeAk6Jc3fkCGCqmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABPnrifN4ON7s0RVLH5orahap/wsrNZqnWlyQnSgOlVdQAAAAAOgAAAAAIAACAAAAABw+yxP/jm88SOkDV5vOdb1Ha14HRf2ra5yxmUxJ9tnhAAAAA/RFHYTo2/3TlDSn1q10SpQAAAAPYxtDY4wNwYr8MXILwXphCpkyyrqlqD5pbcEWQGr9lQJ2nVDDctLmOwJqgDXDXkj0/PYe4dmBO2fCjG01dZ+lc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{32793602-2F43-4B07-B63C-FAC55EBDC775}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="17418"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header">Rosas, Claveles, Macetas, Tierra, Girasoles, Hortensia, Globos, Tarjetas, Lirios, Aurora, Tulipanes, Cantidad</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rosas]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rosas]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Rosas]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Claveles]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Claveles]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Claveles]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Macetas]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Macetas]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Macetas]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Tierra]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tierra]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tierra]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Girasoles]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Girasoles]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Girasoles]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Hortensia]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Hortensia]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Hortensia]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Globos]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Globos]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Globos]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Tarjetas]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tarjetas]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tarjetas]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Lirios]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Lirios]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Lirios]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Aurora]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Aurora]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aurora]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Tulipanes]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tulipanes]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tulipanes]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                      cachedDataType="i4"
+                      cachedName="Cantidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Cantidad]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rosas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Claveles]"
+                      dataType="wstr"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Macetas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tierra]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Girasoles]"
+                      dataType="wstr"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Hortensia]"
+                      dataType="wstr"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Globos]"
+                      dataType="wstr"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tarjetas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Lirios]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Aurora]"
+                      dataType="wstr"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Tulipanes]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      dataType="i4"
+                      name="Cantidad" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Origen de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Rosas, Claveles, Macetas, Tierra, Girasoles, Hortensia, Globos, Tarjetas, Lirios, Aurora, Tulipanes, COUNT(*) AS Cantidad
+FROM     data_analysis
+GROUP BY Rosas, Claveles, Macetas, Tierra, Girasoles, Hortensia, Globos, Tarjetas, Lirios, Aurora, Tulipanes
+ORDER BY Cantidad DESC</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."data_analysis"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Origen de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Fiorella_San_salvador.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Fiorella_San_salvador.sa]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Rosas]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Rosas]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Rosas]"
+                      name="Rosas"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Claveles]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Claveles]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Claveles]"
+                      name="Claveles"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Macetas]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Macetas]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Macetas]"
+                      name="Macetas"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tierra]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tierra]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tierra]"
+                      name="Tierra"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Girasoles]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Girasoles]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Girasoles]"
+                      name="Girasoles"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Hortensia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Hortensia]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Hortensia]"
+                      name="Hortensia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Globos]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Globos]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Globos]"
+                      name="Globos"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tarjetas]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tarjetas]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tarjetas]"
+                      name="Tarjetas"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Lirios]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Lirios]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Lirios]"
+                      name="Lirios"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aurora]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Aurora]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Aurora]"
+                      name="Aurora"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tulipanes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tulipanes]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Tulipanes]"
+                      name="Tulipanes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Cantidad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Cantidad]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[Cantidad]"
+                      name="Cantidad"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Rosas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Rosas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Claveles]"
+                      dataType="wstr"
+                      length="50"
+                      name="Claveles" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Macetas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Macetas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tierra]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tierra" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Girasoles]"
+                      dataType="wstr"
+                      length="50"
+                      name="Girasoles" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Hortensia]"
+                      dataType="wstr"
+                      length="50"
+                      name="Hortensia" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Globos]"
+                      dataType="wstr"
+                      length="50"
+                      name="Globos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tarjetas]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tarjetas" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Lirios]"
+                      dataType="wstr"
+                      length="50"
+                      name="Lirios" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Aurora]"
+                      dataType="wstr"
+                      length="50"
+                      name="Aurora" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Tulipanes]"
+                      dataType="wstr"
+                      length="50"
+                      name="Tulipanes" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[Cantidad]"
+                      dataType="i4"
+                      name="Cantidad" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Rosas]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Rosas]"
+                      name="Rosas" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Claveles]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Claveles]"
+                      name="Claveles" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Macetas]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Macetas]"
+                      name="Macetas" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tierra]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tierra]"
+                      name="Tierra" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Girasoles]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Girasoles]"
+                      name="Girasoles" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Hortensia]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Hortensia]"
+                      name="Hortensia" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Globos]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Globos]"
+                      name="Globos" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tarjetas]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tarjetas]"
+                      name="Tarjetas" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Lirios]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Lirios]"
+                      name="Lirios" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Aurora]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Aurora]"
+                      name="Aurora" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tulipanes]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Tulipanes]"
+                      name="Tulipanes" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Cantidad]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[Cantidad]"
+                      name="Cantidad" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="102.142857360292,77.99999993163" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Data Flow Task\Origen de ADO NET"
+          TopLeft="271.428572006372,109.352941080619" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="271.428572006371,266.882352707244" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+          TopLeft="357.228572006372,150.952941080619">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,115.929411626625"
+              Start="0,0"
+              End="0,108.429411626625">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,108.429411626625" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
